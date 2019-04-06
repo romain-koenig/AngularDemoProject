@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="onBtnDisplayClick($event)">
+  {{displayOrHideDetails}}
+</button>
+<p [hidden]="hiddenInstruction  ">Secret password = "TUNA"</p>
+<ul>
+  <li [ngStyle] ="{backgroundColor: 'blue'}"
+  [ngClass] = "{overFive:item > 4}" *ngFor="let item of clickHistory">ELEMENT - {{item}}</li>
+</ul>
