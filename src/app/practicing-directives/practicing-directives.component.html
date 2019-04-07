@@ -3,6 +3,11 @@
 </button>
 <p [hidden]="hiddenInstruction  ">Secret password = "TUNA"</p>
 <ul>
+  <!--[ngStyle] ="{backgroundColor: item>4 ? 'blue' : 'transparent'}">>> background color gets set to either blue or trnasparent -->
+  <!--[ngClass] = "{overFive:item > 4}" >>> css class gets applied or not with a condition-->
+  <!--*ngFor="let item of clickHistory" >>> for loop to display content of an array-->
+  <!--ELEMENT - {{item}} >>> String interpolation using "item" defined in for loop-->
   <li [ngStyle] ="{backgroundColor: item>4 ? 'blue' : 'transparent'}"
-  [ngClass] = "{overFive:item > 4}" *ngFor="let item of clickHistory">ELEMENT - {{item}}</li>
+  [ngClass] = "{overFive:item > 4}" 
+  *ngFor="let item of clickHistory">ELEMENT - {{item}}</li>
 </ul>
