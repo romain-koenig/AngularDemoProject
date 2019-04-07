@@ -24,7 +24,10 @@ export class PracticingDirectivesComponent implements OnInit {
     this.hiddenInstruction = !this.hiddenInstruction;
     this.displayOrHideDetails = this.displayOrHideDetails === "Show Details" ? "Hide Details" : "Show Details";
     
-    this.clickHistory.push(this.clickHistory.length + 1);
+    // Using number of clicks
+    //this.clickHistory.push(this.clickHistory.length + 1);
+    //using timestanp
+    this.clickHistory.push(new Date());
   }
 
   ngOnInit() {
