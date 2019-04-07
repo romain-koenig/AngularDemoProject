@@ -3,6 +3,6 @@
 </button>
 <p [hidden]="hiddenInstruction  ">Secret password = "TUNA"</p>
 <ul>
-  <li [ngStyle] ="{backgroundColor: 'blue'}"
+  <li [ngStyle] ="{backgroundColor: item>4 ? 'blue' : 'transparent'}"
   [ngClass] = "{overFive:item > 4}" *ngFor="let item of clickHistory">ELEMENT - {{item}}</li>
 </ul>
